@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="fotos/logo3.jpg" alt="Logo de la tienda" id="logo">
+        </div>
+    </header>
+    <main class="cart-section">
+        <h1 class="title">Carrito de Compras</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td><img src="fotos/producto.jpg" alt="Producto" class="product-img"></td>
+                    <td>SHAWN MENDES</td>
+                    <td>$1900.00</td>
+                    <td>1</td>
+                    <td>$1900.00</td>
+                    <td><button class="delete-btn">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-footer">
+            <p id="total-price">Total: $1900.00</p>
+            <button id="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+            <a href="tienda.html" class="back-to-store">Volver a la tienda</a>
+        </div>
+    </main>
+    <footer>
+        <p>© PROGRA MARZO 2024</p>
+    </footer>
+</body>
+<script>
+    function finalizarCompra() {
+        alert("Compra finalizada con éxito.");
+    }
+</script>
+</html>
